@@ -10,6 +10,16 @@ public abstract class Vehiculo {
         this.modelo = modelo;
     }
 
+    public String getPlaca() {
+        return placa;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    
+
     
     
     
