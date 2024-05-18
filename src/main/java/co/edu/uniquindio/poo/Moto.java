@@ -4,8 +4,8 @@ public class Moto extends Vehiculo {
 
     private final String velocidadMaxima;
 
-    public Moto(String placa, String modelo, String velocidadMaxima) {
-        super(placa, modelo, TipoVehiculo.MOTO_CLASICA);
+    public Moto(String placa, String modelo, String velocidadMaxima, TipoVehiculo tipoVehiculo, Propietario propietario) {
+        super(placa, modelo, TipoVehiculo.MOTO_CLASICA, propietario);
         this.velocidadMaxima = velocidadMaxima;
     }
 
