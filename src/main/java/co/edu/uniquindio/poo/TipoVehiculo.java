@@ -2,11 +2,11 @@ package co.edu.uniquindio.poo;
 
 public enum TipoVehiculo {
     
-    CARRO(5000.0),
-    MOTO_CLASICA(1500.0),
-    MOTO_HIBRIDA(1500.0);
+    CARRO(0),
+    MOTO_CLASICA(0),
+    MOTO_HIBRIDA(0);
 
-    private final double tarifa;
+    private double tarifa;
 
     private TipoVehiculo(double tarifa) {
         this.tarifa = tarifa;
@@ -15,5 +15,11 @@ public enum TipoVehiculo {
     public double getTarifa() {
         return tarifa;
     }
+
+    public void setTarifa(double tarifa) {
+        this.tarifa = tarifa;
+    }
+
+    
 
 }
