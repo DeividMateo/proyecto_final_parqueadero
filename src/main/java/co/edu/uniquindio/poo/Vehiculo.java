@@ -14,6 +14,12 @@ public abstract class Vehiculo {
         return placa;
     }
 
+    public String getModelo() {
+        return modelo;
+    }
+
+    
+
    
 
     
