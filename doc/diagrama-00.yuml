@@ -1,0 +1,9 @@
+// {type:class}
+// {direction:leftToRight}
+// {generate:true}
+
+
+
+[Parqueadero|Puesto:Puesto();Tarifa:;Ingresos:;] [<<enum>>;Vehiculo |-Placa:String;-Modelo: String;-Propietario:String ][Carro|TarifaHora][Moto||][Puestos|Disponibilidad: ; Posicion: ; ] [Administrador]
+
+[Parqueadero]<>1-*>[<<enum>>;Vehiculo]
