@@ -4,10 +4,12 @@ public abstract class Vehiculo {
 
     private final String placa;
     private final String modelo;
+    private final TipoVehiculo tipoVehiculo;
 
-    public Vehiculo(String placa, String modelo) {
+    public Vehiculo(String placa, String modelo, TipoVehiculo tipoVehiculo) {
         this.placa = placa;
         this.modelo = modelo;
+        this.tipoVehiculo = tipoVehiculo;
     }
 
     public String getPlaca() {
@@ -18,15 +20,7 @@ public abstract class Vehiculo {
         return modelo;
     }
 
-    
-
-   
-
-    
-
-    
-    
-    
-    
-   
+    public TipoVehiculo getTipoVehiculo() {
+        return tipoVehiculo;
+    }  
 }
