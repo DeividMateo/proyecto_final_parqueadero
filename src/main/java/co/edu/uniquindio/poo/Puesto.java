@@ -7,5 +7,6 @@ public class Puesto {
     private final Registro registro;
        var puesto = new HashMap<String, String>();
        puesto.put("1","Ocupado");
+       
     
 }
