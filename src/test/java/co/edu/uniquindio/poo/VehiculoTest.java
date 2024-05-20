@@ -13,12 +13,12 @@ public class VehiculoTest {
     public void datosCompletos(){
             LOG.info("Inicio Test prueba de datos completos");
 
-      Vehiculo vehiculo= new Vehiculo("ABC123","2010",TipoVehiculo.CARRO,Propietario.vehiculo);
+      Vehiculo vehiculo= new Vehiculo("ABC123","2010",TipoVehiculo.CARRO,);
 
             assertEquals("ABC123", vehiculo.getPlaca());
             assertEquals("2010", vehiculo.getModelo());
-            assertEquals(TipoVehiculo.CARRO, vehiculo.tipo());
-            assertEquals(Propietario.vehiculo, vehiculo.propietario());
+            assertEquals(TipoVehiculo.CARRO, vehiculo.getTipoVehiculo());
+            assertEquals(, vehiculo.getPropietario());
 
          LOG.info("Fin Test prueba de datos completos");
     

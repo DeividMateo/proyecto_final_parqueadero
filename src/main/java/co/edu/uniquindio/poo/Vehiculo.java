@@ -30,5 +30,7 @@ public abstract class Vehiculo {
         return propietario;
     }  
 
+        
+
     
 }
