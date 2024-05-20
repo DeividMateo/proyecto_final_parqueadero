@@ -1,5 +1,9 @@
 package co.edu.uniquindio.poo;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.logging.Logger;
+
 import org.junit.jupiter.api.Test;
 
 public class VehiculoTest {
@@ -7,15 +11,16 @@ public class VehiculoTest {
     @Test
 
     public void datosCompletos(){
-        LOG.info("Inicio Test prueba de datos completos");
+            LOG.info("Inicio Test prueba de datos completos");
 
-      var Vehiculo = new Vehiculo("ABC123","2010",TipoVehiculo.CARRO, var propietario = new Propietario("Juan", "Perez", "1234567890"));
-        assertEquals("ABC123" Vehiculo.placa());
-        assertEquals("2010" Vehiculo.modelo());
-        assertEquals(TipoVehiculo.CARRO, Vehiculo.tipo());
-        assertEquals(Propietario.Vehiculo, propietario());
+      Vehiculo vehiculo= new Vehiculo("ABC123","2010",TipoVehiculo.CARRO,Propietario.vehiculo);
 
-       LOG.INFO("Fin Test prueba de datos completos");
+            assertEquals("ABC123", vehiculo.getPlaca());
+            assertEquals("2010", vehiculo.getModelo());
+            assertEquals(TipoVehiculo.CARRO, vehiculo.tipo());
+            assertEquals(Propietario.vehiculo, vehiculo.propietario());
+
+         LOG.info("Fin Test prueba de datos completos");
     
 
     }
