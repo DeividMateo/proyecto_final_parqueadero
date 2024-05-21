@@ -1,7 +1,5 @@
-package co.edu.uniquindio.poo;
+public class parquedero {
 
-public class Parqueadero {
-    
-    private double tarifaHora;
-    
+    "hola"
+
 }

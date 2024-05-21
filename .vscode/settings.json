@@ -1,3 +1,4 @@
 {
-    "liveshare.accessibility.accessibilityFeaturesEnabled": "on"
+    "liveshare.accessibility.accessibilityFeaturesEnabled": "on",
+    "java.debug.settings.onBuildFailureProceed": true
 }

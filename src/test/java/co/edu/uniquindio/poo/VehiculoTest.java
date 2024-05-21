@@ -11,16 +11,17 @@ public class VehiculoTest {
     @Test
 
     public void datosCompletos(){
-            LOG.info("Inicio Test prueba de datos completos");
+            
+        LOG.info("Inicio Test prueba de datos completos");
 
-      Vehiculo vehiculo= new Vehiculo("ABC123","2010",TipoVehiculo.CARRO,"");
+        var carro= new Carro("DQD19", "2020", TipoVehiculo.CARRO, new Propietario("Deivid"));
 
-            assertEquals("ABC123", vehiculo.getPlaca());
-            assertEquals("2010", vehiculo.getModelo());
-            assertEquals(TipoVehiculo.CARRO, vehiculo.getTipoVehiculo());
-            assertEquals("" , vehiculo.getPropietario());
+        assertEquals("DQD19", carro.getPlaca());
+        assertEquals("2020", carro.getModelo());
+        assertEquals(TipoVehiculo.CARRO, carro.getTipoVehiculo());
+        assertEquals("Deivid" , carro.getPropietario().getNombre());
 
-         LOG.info("Fin Test prueba de datos completos");
+        LOG.info("Fin Test prueba de datos completos");
     
 
     }
